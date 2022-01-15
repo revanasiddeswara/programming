@@ -1,0 +1,368 @@
+
+.body {
+    top: 0;
+    bottom: 0;
+}
+
+.head {
+    margin-left: -8px;
+    margin-top: -8px;
+      margin-right: -8px;
+      font-family: 'Titillium Web', sans-serif;
+}
+.headdiv {
+    background-image: url("./hello.jpeg");
+opacity: 250;
+background-size: cover;
+      background-repeat: no-repeat;
+
+}
+
+.navbardiv{ 
+background-color: rgba(39, 40, 51, 0.8);
+background-repeat: repeat;
+padding: 5px;
+text-align: left;
+} 
+.naa{
+  position : relative;
+  color:rgba(39, 40, 51, 0.8);;
+  -webkit-text-stroke: 0.3vw rgba(39, 40, 51, 0.8);;
+
+}
+.naa ::before{
+  content:attr(data-text);
+  position:absolute;
+  top:0;
+  left : 0;
+  width:0%;
+  height:100%;
+  color:#f3f3ed;
+  -webkit-text-stroke: 0vw rgba(39, 40, 51, 0.8);;
+  border-right:2px solid #fcfbf8;
+  overflow:hidden;
+  animation :animate 6s linear infinite;
+}
+@keyframes animate
+{
+  0%,10%,100%
+  {
+    width:0;
+  }
+  70%,90%
+  {
+    width:100%;
+  }
+}
+.navbardivi{
+  background-color: rgba(39, 40, 51, 0.8);
+background-repeat: repeat;
+padding: 15px;
+text-align: right;
+}
+
+.navbardiv nav {
+    color: white;
+}
+
+
+#navbrand {
+    font-size: 100px;
+    margin-right: 10px;
+    color: white;
+
+} 
+.navbardiv nav a {
+  text-align: center;
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+    padding-left: 50px;
+}
+#navabout {
+    margin-left: 100px;
+} 
+
+.navbardiv ul li {
+    display: inline-block;
+}
+
+.navainfo ul li {
+    display: block;
+  color: white;
+  text-align: end;
+  padding-left:5px;
+  margin-left: 500px;
+} 
+.explo{
+    margin-top: 101px;
+    padding-bottom: 30px;
+    color: rgb(248, 244, 244);
+    font-size: 45px;
+    margin-right: 220px;
+    text-align: end;
+    text-shadow: 2px 5px #020101;
+}
+.grid-container {
+    display:grid;
+    grid-template-columns: auto  auto auto auto;
+    background-color: blanchedalmond;
+    
+    font-family: 'Titillium Web', sans-serif;
+    
+  }
+
+  .grid-item ul{
+    display: flex;
+    list-style: none;
+    color: rgb(230, 124, 124);
+    background-color: #000000;
+      
+     
+  }
+  .grid-item ul a{
+    text-decoration: none;
+    color:white;
+  }
+  .sub-menu{
+    display:none;
+  }
+  .grid-item ul li:hover .sub-menu
+  {
+    display:block;
+    position: static;
+    background-color: rgb(31, 29, 29);
+    margin-top: 15px;
+    margin-left: -15px;
+  }
+  .grid-item ul li:hover .sub-menu{
+    display: block;
+    margin: 10px;
+  }
+  .grid-item ul li:hover .sub-menu ul{
+    display:block;
+    margin:10px;
+
+  }
+  .grid-item ul li:hover .sub-menu ul li{
+    width:150px;
+    padding:10px;
+    border-bottom: 1px dotted #eee;
+  }
+  .grid-item ul li:hover .sub-menu ul li:last-child{
+    border-bottom: none;
+  }
+
+  .leftbodydiv{
+margin-left: 100px;
+padding: 10px;
+width: 500px;
+padding: 20px;
+font-size: 15px;
+  }
+
+  .leftbodydiv h1{
+      width: 350px;
+  }
+  .rightbodydiv{
+    background-color: black;
+    color: white;
+    width: 300px;
+    box-shadow: 0 0 5px #ff96ad, 0 0 15px
+      #ff96ad,0 0 50px #df7b90,0 0 100px #c2b3b6;
+  }
+  .form-group{
+    background-color: #000000;
+  }
+   .form-control {
+      display: block;
+      width: 100%;
+      height: 2.375rem;
+      padding: 0.375rem 0.75rem;
+      color: #a7a67a;
+      background-color: rgb(0, 0, 0);
+      background-clip: padding-box;
+      border: 1px solid #ced4da;
+      border-radius: 0.25rem;
+      transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      color: #eee;
+      background-color: #000000;
+      box-shadow: 0 0 5px #ff96ad, 0 0 15px
+      #ff96ad,0 0 50px #ff96ad,0 0 200px #c2b3b6;
+    }
+    
+    .form-control:focus {
+      border-color: #31e240;
+      outline: 0;
+      box-shadow: 0 0 0 0.2rem rgba(0, 255, 255, 0.25);
+    }
+    
+
+  .rightbodydiv h1{
+    text-align: center;
+    padding-top: 20px;
+  }
+
+
+  .ulright ul li {
+    list-style-type:none;
+    padding: 10px;
+  }
+
+
+  .ulright ul li a{
+padding-right: 10px;
+
+  }
+
+  .rightbodydiv ul li {
+    padding-right: 10px;
+  }
+
+  .ulright ul li :hover{
+    background-color: rgb(37, 172, 116);
+  
+  }
+
+
+  .ulright{
+      font-size: 15px;
+  }
+
+  .ulright :hover{
+    background-color: rgb(16, 77, 51);
+  }
+  .lfoot{
+     width: 50%;
+      background-color: rgb(16, 77, 51);
+  }
+
+  .rfoot{
+    width: 50%;
+     background-color: rgb(16, 77, 51);
+ }
+ .column {
+  align-content: center;
+    float: right;
+    width: 50%;
+    padding: 0px;
+    height: 400px; /* Should be removed. Only for demonstration */
+  }
+  
+  .column  .content{
+    max-width:800px ;
+    margin-left: -350px;
+    
+  }
+  .column .text h3{
+    
+    margin-left: -350px;
+
+  }
+  .column .text p{
+    margin-left: -350px;
+  }
+  .column .text a {
+    text-decoration: none;
+    color: #371ec2;
+    margin-left: -350px;
+  }
+  .column text{
+    
+    text-align: left;
+    padding-left: 0%;
+  } 
+
+  * {
+    box-sizing: border-box;
+  }
+ .column .review a{
+   text-align: center;
+   text-decoration: none;
+   display:inline-block;
+   padding:8px 16px;
+   max-width: 300px;
+   width: 100%;
+   height: 30px;
+   margin: 15px 0;
+   margin-left: -350px;
+ }
+ .column .review a:hover{
+   background-color: blueviolet;
+   color:black;
+ }
+ .column .view{
+  width: 100%;
+    background-color: #000000;
+    color: white;
+    padding: 14px 20px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: -350px;
+    color: rgb(228, 222, 222);
+  background-color: #1b1b19;
+  box-shadow: 0 0 5px #ff96ad, 0 0 25px
+  #ff96ad,0 0 50px #ff96ad,0 0 200px #c2b3b6;
+ }
+ .column .span{
+  color: orange;
+}
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-left: -35px;
+  }
+  
+  form .id {
+    text-decoration: none;
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    padding: 8px 165px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: -35px;
+    color: rgb(228, 222, 222);
+  background-color: #1b1b19;
+  box-shadow: 0 0 5px #ff96ad, 0 0 25px
+  #ff96ad,0 0 50px #ff96ad,0 0 200px #c2b3b6;
+  }
+  
+  form .id:hover {
+    background-color: #328a5a;
+  }
+
+  .column1  {
+    float: right;
+    width: 50%;
+    padding: 5px;
+    
+  }
+  textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-left: -35px;
+    
+  }
+  
+
+  .column2 {
+    float: right;
+    width: 50%;
+    padding: 10px;
+  }
